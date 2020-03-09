@@ -59,7 +59,7 @@ void testSaveExtraFilesHook() {
 
 
 // TODO: Re-enable when add_type_tags is true
-// void testTypeTags() {
+void testTypeTags() {
 //   auto list = c10::List<c10::List<int64_t>>();
 //   list.push_back(c10::List<int64_t>({1, 2, 3}));
 //   list.push_back(c10::List<int64_t>({4, 5, 6}));
@@ -94,7 +94,7 @@ void testSaveExtraFilesHook() {
 //     ASSERT_TRUE(loaded.type()->isSubtypeOf(item.expected_type));
 //     ASSERT_TRUE(item.expected_type->isSubtypeOf(loaded.type()));
 //   }
-// }
+}
 
 } // namespace jit
 } // namespace torch
