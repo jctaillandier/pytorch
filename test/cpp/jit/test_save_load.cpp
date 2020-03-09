@@ -58,6 +58,7 @@ void testSaveExtraFilesHook() {
 }
 
 void testTypeTags() {
+  torch::jit::setTypeTags(true);
   auto list = c10::List<c10::List<int64_t>>();
   list.push_back(c10::List<int64_t>({1, 2, 3}));
   list.push_back(c10::List<int64_t>({4, 5, 6}));
