@@ -13,10 +13,7 @@ namespace jit {
 
 using ::c10::IValue;
 
-void setTypeTags(bool state) {
-  add_type_tags = state;
-}
-
+thread_local bool add_type_tags = false;
 bool getTypeTags() {
   return add_type_tags;
 }

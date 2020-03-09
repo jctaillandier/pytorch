@@ -109,7 +109,6 @@ struct WriteableTensorData {
   uint64_t size_;
 };
 
-thread_local bool add_type_tags = false;
 void setTypeTags(bool state);
 bool getTypeTags();
 
